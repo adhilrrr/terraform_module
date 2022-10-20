@@ -1,12 +1,11 @@
-
-resource "aws_s3_bucket" "dev9986342188s3" {
+resource "aws_s3_bucket" "devs389" {
 
   bucket                = var.bucket
   #bucket_prefix         = var.bucket_prefix
   force_destroy         = var.force_destroy
+  object_lock_enabled   = var.object_lock_enabled
 
   tags = {
-    Name        = "dev9986342188s3"
+    Name        = "devonS389"
   }
 }
-
